@@ -23,16 +23,69 @@ background-repeat: no-repeat;
 background-size: cover;
 min-height: 70vh;
 align-items: center;
-display: flex;}
+display: flex;
+align-items: center;}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.logo{color: white;
+font-size: 25px;
+font-weight: 800;}
+
+.menu .navbar ul li {position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    display: block;
+}
+#menu{display: none;}
+.menu-icono {width: 25px;}
+
+.menu label {cursor: pointer;
+display: none;}
+
+.header-txt {text-align: center;}
+
+.header-txt h1 { font-size: 85px;
+color: white;
+text-transform: uppercase;
+margin-bottom: 20px;}
+
+.header-txt p {color: grey;
+font-size: 16px;
+padding: 0 250px;
+margin-bottom: 45px;}
+
+.btn-1 {display: inline-block;
+padding: 12px 45px;
+border: 1px solid white;
+color: white;
+font-size: 16px;
+text-transform: uppercase;
+font-weight: 600;}
+.btn-1:hover {color: black;
+background-color: white;}
+
 </style>
 </head>
 <body>
     <header class="header">
     <div class="menu container"> <a href="#" class="logo">logo</a>
         <input type="checkbox" id="menu">
-        <label for="menu"></label>
-<img src="C:\Users\CARMEN VARGAS\Desktop\jeje\reda2\img/menu-hamburguesa.png" width="2%" alt="">
-        <nav>
+        <label for="menu"><img src="C:\Users\CARMEN VARGAS\Desktop\jeje\reda2\img\imagen\menu.png" width="4%" alt=""></label>
+
+        <nav class="navbar">
             <ul>
             <li><a href="inicio.html">Inicio </a>|</li>
             <li><a href="contenido.html">Contenido</a>|</li>
@@ -45,9 +98,14 @@ display: flex;}
         </nav>
     </div>
     <div class="header-content container">
-        <h1>Inicio</h1>
-        <p>les vamos a presentar nuestro tema a tratar para esta tematica y enseñanza de esta no se preocupen le haremos entender de la manera mas sencilla posible</p>
-        <a href="#" class="btn-1"></a>
+        <div class="header-txt">
+            <h1>Inicio</h1>
+            <p>
+                les vamos a presentar nuestro tema a tratar para esta tematica y enseñanza de esta no se preocupen le haremos entender de la manera mas sencilla posible
+            </p>
+            <a href="#" class="btn-1">Informacion</a>
+        </div>
+        
     </div>
 
     </header>
