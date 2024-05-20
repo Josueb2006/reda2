@@ -5,19 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/jpg" href="C:\Users\CARMEN VARGAS\Desktop\jeje\reda2\img/hogar.png">
     <title>Pagina de contenido</title>
-    <nav>
-        <a href="inicio.html"><img src="C:\Users\CARMEN VARGAS\Desktop\jeje\reda2\img/hogar.png" alt=""></a>|
-        <a href="contenido.html">contenido <img src="C:\Users\Informatica04\Desktop\fundamento de algoritmia 2024\REDA_prueba\img/contenido.png" width="2%" alt=""></a>|
-        <a href="actividades.html">Actividades</a>|
-        <a href="evaluacion.html">Evaluacion</a>|
-        <a href="Materialcomplementario.html">Materialcomplementario</a>|
-        <a href="Creditos.html">Creditos</a>|
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;}
+body{font-family: "popping", sans-serif;}
+.container{max-width: 1200px;
+margin: 0 auto;}
+.header{background-image: url(img/imagen/TDP3D.png);
+background-position: center bottom;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 70vh;
+align-items: center;
+display: flex;
+align-items: center;}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.logo{color: white;
+font-size: 25px;
+font-weight: 800;}
+
+.menu .navbar ul li {position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    display: block;
+}
+#menu{display: none;}
+.menu-icono {width: 25px;}
+
+.menu label {cursor: pointer;
+display: none;}
+
+    </style>
+     <header class="header">
+        <div class="menu container"> <a href="#" class="logo">logo</a>
+            <input type="checkbox" id="menu">
+            <label for="menu"><img src="C:\Users\CARMEN VARGAS\Desktop\jeje\reda2\img\imagen\menu.png" width="4%" alt=""></label>
+    <nav class="navbar">
+        <ul>
+        <li><a href="inicio.html">Inicio </a></li>
+        <li><a href="contenido.html">Contenido</a></li>
+        <li><a href="actividades.html">Actividades</a></li>
+        <li><a href="evaluacion.html">Evaluacion</a></li>
+        <li><a href="Materialcomplementario.html">Materialcomplementario</a></li>
+        <li><a href="Creditos.html">Creditos</a></li>
+
+    </ul>
     </nav>
 </head>
 <body>
-    <br>
+    
     <center>
+        <br>
+    <br>
+
     <h1>Esta es mi pagina de contenido</h1>
+    <br>
     <hr noshade="noshade" size="5" width="50%" color="blue">
     <p>Teorema de Pitágoras
     
@@ -32,14 +92,8 @@
         </p>
 
         <p>Teorema de Pitágoras
-
-            El Teorema de Pitágoras es uno de los teoremas que más
-            ha maravillado a todas las civilizaciones a lo largo de la historia. Algunos historiadores sugieren que en Babilonia por
-            el año 1600 a.C., se calculaban las diagonales de ciertas figuras utilizando este teorema, sin embargo, la primera demostración formal conocida se le otorga usualmente al filósofo matemático griego Pitágoras de Samos, considerado
-            el primer matemático puro. Este teorema cuenta con una
-            gran cantidad de demostraciones realizadas por personajes
-            importantes de la ciencia y la matemática a lo largo de toda
-            la historia.
+<br>
+            
             
             En la antigüedad se utilizaba el teorema de
             Pitágoras para medir terrenos en agricultura,
@@ -65,7 +119,7 @@
             = 25 (cm)2
             3 × 4
             2
-        
+        <br>
             Cálculo de la hipotenusa de un triángulo rectángulo, parte 1
 En la figura, el ∆ABC, ∆DAF, ∆EDG y ∆BEH son triángulos
 rectángulos y congruentes.
@@ -77,6 +131,5 @@ d) Encuentra la medida del lado AB.
 
             
             </p>
-
 </body>
 </html>
