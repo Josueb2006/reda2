@@ -12,9 +12,12 @@ padding: 0;
 box-sizing: border-box;
 text-decoration: none;
 list-style: none;}
+
 body{font-family: "popping", sans-serif;}
+
 .container{max-width: 1200px;
 margin: 0 auto;}
+
 .header{background-image: url(img/imagen/TDP3D.png);
 background-position: center bottom;
 background-repeat: no-repeat;
@@ -34,6 +37,7 @@ align-items: center;}
     justify-content: space-between;
     z-index: 1000;
 }
+
 .logo{color: white;
 font-size: 25px;
 font-weight: 800;}
@@ -52,9 +56,42 @@ font-weight: 800;}
 
 .menu label {cursor: pointer;
 display: none;}
+.header-txt {text-align: center;}
+
+.header-txt h1 { font-size: 85px;
+color: white;
+text-transform: uppercase;
+margin-bottom: 20px;}
+
+.header-txt p {color: white;
+font-size: 16px;
+padding: 0 250px;
+margin-bottom: 45px;}
+.btn-1 {display: inline-block;
+padding: 12px 45px;
+border: 1px solid white;
+color: white;
+font-size: 16px;
+text-transform: uppercase;
+font-weight: 600;}
+.btn-1:hover {color: black;
+background-color: white;}
+h2 {font-size: 70px;
+text-transform: uppercase;
+color: #1B293A;}
+
+.txt h3 { font-size: 18px;
+color: white;
+text-transform: uppercase;
+margin-bottom: 10px;}
+
+.txt p {color: white;}
+
 
     </style>
-     <header class="header">
+    </head>
+    <body>
+    <header class="header">
         <div class="menu container"> <a href="#" class="logo">logo</a>
             <input type="checkbox" id="menu">
             <label for="menu"><img src="C:\Users\CARMEN VARGAS\Desktop\jeje\reda2\img\imagen\menu.png" width="4%" alt=""></label>
@@ -69,13 +106,24 @@ display: none;}
 
     </ul>
     </nav>
-</head>
-<body>
+</div>
+<div class="header-content container">
+    <div class="header-txt">
+        <h1>Contenido</h1>
+        <p> 
+            Les vamos a presentar nuestro tema a tratar para esta tematica y enseñanza de esta no se preocupen le haremos entender de la manera mas sencilla posible.
+        </p>
+        <a href="#" class="btn-1">Informacion</a>
+    </div>
+    
+</div>
+    </header>
     
     <center>
         <br>
     <br>
-
+    <section>
+<div>
     <h1>Esta es mi pagina de contenido</h1>
     <br>
     <hr noshade="noshade" size="5" width="50%" color="blue">
@@ -90,8 +138,9 @@ display: none;}
         la historia.
         
         </p>
-
-        <p>Teorema de Pitágoras
+    </div>
+</section>
+        <div><p>Teorema de Pitágoras
 <br>
             
             
@@ -131,5 +180,58 @@ d) Encuentra la medida del lado AB.
 
             
             </p>
+<<<<<<< Updated upstream
+=======
+
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<br><br><br>
+</div>
+<title>Practica Teorema de Pitágoras</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    #resultado {
+        font-weight: bold;
+        color: blue;
+    }
+</style>
+</head>
+<body>
+<h1>Actividad Teorema de Pitágoras</h1>
+<p>Ingresa las longitudes de los dos catetos del triángulo rectángulo:</p>
+<label for="catetoA">Cateto A:</label>
+<input type="number" id="catetoA"><br><br>
+<label for="catetoB">Cateto B:</label>
+<input type="number" id="catetoB"><br><br>
+<button onclick="calcularHipotenusa()">Calcular Hipotenusa</button>
+<p id="resultado"></p>
+
+<script>
+function calcularHipotenusa() {
+    var catetoA = parseFloat(document.getElementById('catetoA').value);
+    var catetoB = parseFloat(document.getElementById('catetoB').value);
+
+    if (isNaN(catetoA) || isNaN(catetoB)) {
+        alert('Por favor ingresa números válidos para los catetos.');
+        return;
+    }
+
+    var hipotenusa = Math.sqrt(Math.pow(catetoA, 2) + Math.pow(catetoB, 2));
+    document.getElementById('resultado').innerText = 'La longitud de la hipotenusa es: ' + hipotenusa.toFixed(2);
+}
+</script>
+</body>
+</html>
+</center>
+
+
+
+>>>>>>> Stashed changes
 </body>
 </html>
