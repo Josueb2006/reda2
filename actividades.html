@@ -4,151 +4,216 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/jpg" href="C:\Users\CARMEN VARGAS\Desktop\jeje\reda2\img/hogar.png">
-    <title>Pagina de actividades</title>
-    <style> @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
-        *{margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        text-decoration: none;
-        list-style: none;}
-        body{font-family: "popping", sans-serif;}
-
-.container{max-width: 1200px;
-margin: 0 auto;}
-
-.header{background-image: url(img/imagen/pt.webp);
-background-position: center bottom;
-background-repeat: no-repeat;
-background-size: cover;
-min-height: 70vh;
-align-items: center;
-display: flex;
-align-items: center;}
-
-.menu{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-}
-
-.logo{color: white;
-font-size: 25px;
-font-weight: 800;}
-
-.menu .navbar ul li {position: relative;
-    float: left;
-}
-.menu .navbar ul li a {
-    font-size: 18px;
-    padding: 20px;
-    color: white;
-    display: block;
-}
-.menu .navbar ul li a:hover{font-size: 18px;
-padding: 10px;
-color: black;
-display: block;
-background-color: white;}
-#menu{display: none;}
-.menu-icono {width: 25px;}
-
-.menu label {cursor: pointer;
-display: none;}
-.header-txt {text-align: center;}
-
-.header-txt h1 { font-size: 85px;
-color: white;
-text-transform: uppercase;
-margin-bottom: 20px;}
-
-.header-txt p {color: white;
-font-size: 16px;
-padding: 0 250px;
-margin-bottom: 45px;}
-.btn-1 {display: inline-block;
-padding: 12px 45px;
-border: 1px solid white;
-color: white;
-font-size: 16px;
-text-transform: uppercase;
-font-weight: 600;}
-.btn-1:hover {color: black;
-background-color: white;}
-h2 {font-size: 70px;
-text-transform: uppercase;
-color: #1B293A;}
-
-.txt h3 { font-size: 18px;
-color: white;
-text-transform: uppercase;
-margin-bottom: 10px;}
-
-.txt p {color: white;}
-        </style>
+    <title>Página de actividades</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #f0f0f0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            background-image: url('img/imagen/pt.webp');
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            border-bottom: 5px solid #333;
+        }
+        
+        .header h1 {
+            font-size: 4em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        
+        .menu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 1000;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+        .logo {
+            color: white;
+            font-size: 25px;
+            font-weight: 800;
+        }
+        
+        .menu .navbar ul {
+            display: flex;
+        }
+        
+        .menu .navbar ul li {
+            margin: 0 10px;
+        }
+        
+        .menu .navbar ul li a {
+            font-size: 18px;
+            color: white;
+        }
+        
+        .menu .navbar ul li a:hover {
+            color: black;
+            background-color: white;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+        
+        .main {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .main h1 {
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            padding-top: 20px;
+        }
+        
+        .actividad {
+            background-color: #f2f2f2;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .actividad h2 {
+            font-size: 1.5em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            color: #1B293A;
+        }
+        
+        .actividad p {
+            font-size: 1.1em;
+            line-height: 1.6em;
+            margin-bottom: 15px;
+        }
+        
+        .preguntas {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .preguntas h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            color: #1B293A;
+        }
+        
+        .preguntas ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
     <header class="header">
-        <div class="menu container"> <a href="#" class="logo">logo</a>
-            <input type="checkbox" id="menu">
-            <label for="menu"><img src="C:\Users\CARMEN VARGAS\Desktop\jeje\reda2\img\imagen\menu.png" width="4%" alt=""></label>
-    <nav class="navbar">
-        <ul>
-        <li><a href="inicio.html">Inicio </a></li>
-        <li><a href="contenido.html">Contenido</a></li>
-        <li><a href="actividades.html">Actividades</a></li>
-        <li><a href="evaluacion.html">Evaluación</a></li>
-        <li><a href="Materialcomplementario.html">Materialcomplementario</a></li>
-        <li><a href="Creditos.html">Creditos</a></li>
-
-    </ul>
-    </nav>
-</div>
-<div class="header-content container">
-    <div class="header-txt">
-        <h1>Actividades</h1>
-        <p> 
-            "No se trata de cuántas veces te caes, sino de cuántas veces te levantas." - Vince Lombardi
-        </p>
-        <a href="#" class="btn-1">Informacion</a>
-    </div>
-    
-</div>
+        <div class="menu container">
+            <a href="#" class="logo">Logo</a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="contenido.html">Contenido</a></li>
+                    <li><a href="actividades.html">Actividades</a></li>
+                    <li><a href="evaluacion.html">Evaluación</a></li>
+                    <li><a href="Materialcomplementario.html">Material Complementario</a></li>
+                    <li><a href="Creditos.html">Créditos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Actividades sobre el Teorema de Pitágoras</h1>
+                <p>Les vamos a presentar nuestras actividades relacionadas con el tema del teorema de Pitágoras.</p>
+                <a href="#" class="btn-1">Más Información</a>
+            </div>
+        </div>
     </header>
-</head>
-<body>
-    <br>
-    <center>
-        <!DOCTYPE html>
-<html>
-<head>
-    <title>Actividades sobre el teorema de Pitágoras</title>
-</head>
-<body>
-    <h1>Actividades sobre el teorema de Pitágoras</h1>
-    
-    <h2 class="titulo 2">Actividad 1:</h2>
-    <p>Calcula la longitud de la hipotenusa de un triángulo rectángulo con catetos de 3 y 4 unidades.</p>
-    
-    <h2 class="titulo 2">Actividad 2:</h2>
-    <p>Dado un triángulo rectángulo con hipotenusa de 5 unidades y uno de los catetos de 3 unidades, encuentra la longitud del otro cateto.</p>
-    
-    <h2 class="titulo 2">Actividad 3:</h2>
-    <p>Para un triángulo rectángulo con catetos de 6 y 8 unidades, determina la longitud de la hipotenusa.</p>
-    
 
+    <div class="main container">
+        <h1>Actividades</h1>
 
-<h2 class="titulo 2">actividad 4:</h2>
-<p>Calcule la longitud de la hipotenusa de un triángulo rectángulo con catetos de longitud 3 y 4 unidades.</p>
+        <div class="actividad">
+            <h2>Actividad 1:</h2>
+            <p>Calcula la longitud de la hipotenusa de un triángulo rectángulo con catetos de 3 y 4 unidades.</p>
+        </div>
 
-<h2 class="titulo 2">actividad 5:</h2>
-<p>Encuentre la longitud de uno de los catetos de un triángulo rectángulo que tiene una hipotenusa de 10 unidades y otro cateto de 6 unidades.</p>
+        <div class="actividad">
+            <h2>Actividad 2:</h2>
+            <p>Dado un triángulo rectángulo con hipotenusa de 5 unidades y uno de los catetos de 3 unidades, encuentra la longitud del otro cateto.</p>
+        </div>
 
-<h2 class="titulo 2">actividad  6:</h2>
-<p>Verifique si un triángulo con lados de longitud 5, 12 y 13 unidades es un triángulo rectángulo.</p>
-        
-        
-        </body>
-        </html>
+        <div class="actividad">
+            <h2>Actividad 3:</h2>
+            <p>Para un triángulo rectángulo con catetos de 6 y 8 unidades, determina la longitud de la hipotenusa.</p>
+        </div>
+
+        <div class="actividad">
+            <h2>Actividad 4:</h2>
+            <p>Calcula la longitud de la hipotenusa de un triángulo rectángulo con catetos de longitud 3 y 4 unidades.</p>
+        </div>
+
+        <div class="actividad">
+            <h2>Actividad 5:</h2>
+            <p>Encuentra la longitud de uno de los catetos de un triángulo rectángulo que tiene una hipotenusa de 10 unidades y otro cateto de 6 unidades.</p>
+        </div>
+
+        <div class="actividad">
+            <h2>Actividad 6:</h2>
+            <p>Verifica si un triángulo con lados de longitud 5, 12 y 13 unidades es un triángulo rectángulo.</p>
+        </div>
+
+        <div class="preguntas">
+            <h3>Preguntas sobre el Teorema de Pitágoras:</h3>
+            <ul>
+                <li>¿Cuál es la fórmula del teorema de Pitágoras?</li>
+                <li>¿En qué situaciones se aplica el teorema de Pitágoras?</li>
+                <li>¿Qué papel jugó Pitágoras en el desarrollo del teorema?</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
