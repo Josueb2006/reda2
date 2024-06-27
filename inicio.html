@@ -3,364 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" href="C:\Users\CARMEN VARGAS\Desktop\jeje\reda2\img/hogar.png">
-    <link rel="stylesheet" href="style.css">
-    <title>Página de Inicio</title>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
-*{margin: 0;
-padding: 0;
-box-sizing: border-box;
-text-decoration: none;
-list-style: none;}
-
-body{font-family: "popping", sans-serif;}
-.container{max-width: 1200px;
-margin: 0 auto;}
-.header{background-image: url(img/imagen/pt.webp);
-background-position: center bottom;
-background-repeat: no-repeat;
-background-size: cover;
-min-height: 70vh;
-align-items: center;
-display: flex;
-align-items: center;}
-
-.menu{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-}
-.logo{color: white;
-font-size: 25px;
-font-weight: 800;}
-
-.menu .navbar ul li {position: relative;
-    float: left;
-}
-.menu .navbar ul li a {
-    font-size: 18px;
-    padding: 20px;
-    color: white;
-    display: block;
-}
-.menu .navbar ul li a:hover{font-size: 18px;
-padding: 10px;
-color: black;
-display: block;
-background-color: white;}
-#menu{display: none;}
-.menu-icono {width: 25px;}
-
-.menu label {cursor: pointer;
-display: none;}
-
-.header-txt {text-align: center;}
-
-.header-txt h1 { font-size: 85px;
-color: white;
-text-transform: uppercase;
-margin-bottom: 20px;}
-
-.header-txt p {color: white;
-font-size: 16px;
-padding: 0 250px;
-margin-bottom: 45px;}
-
-.btn-1 {display: inline-block;
-padding: 12px 45px;
-border: 1px solid white;
-color: white;
-font-size: 16px;
-text-transform: uppercase;
-font-weight: 600;}
-.btn-1:hover {color: black;
-background-color: white;}
-.general {padding: 50px 0;
-text-align: center;}
-.general-content { display: flex;
-justify-content: space-between;
-margin-top: 55px;}
-.general-1 {background-image: url(img/imagen/PRE2.png) ;
-background-position: center center;
-background-repeat: no-repeat;
-background-size: cover; 
-height: 450px;
-width: 800PX;
-padding: 170px 55px;}
-
-.general-2 {background-image: url(img/imagen/r2.png);
-background-position: center center;
-background-repeat: no-repeat;
-background-size: cover;
-height: 450px;
-padding: 170px 55px;}
-
-.general-3 {background-image: url(img/imagen/r3.png);
-background-position: center center;
-background-repeat: no-repeat;
-background-size: cover;
-height: 450px;
-padding: 170px 55px;}
-
-.general-4 {background-image: url(img/imagen/r4.png);
-background-position: center center;
-background-repeat: no-repeat;
-background-size: cover;
-height: 450px;
-padding: 170px 55px;}
-
-.general-5 {background-image: url(img/imagen/r5.png);
-background-position: center center;
-background-repeat: no-repeat;
-background-size: cover;
-height: 450px;
-padding: 170px 55px;}
-
-.general-6 {background-image: url(img/imagen/r6.png);
-background-position: center center;
-background-repeat: no-repeat;
-background-size: cover;
-height: 450px;
-padding: 170px 55px;}
-
-h2 {font-size: 70px;
-text-transform: uppercase;
-color: #1B293A;}
-
-.txt h3 { font-size: 18px;
-color: white;
-text-transform: uppercase;
-margin-bottom: 10px;}
-
-.txt p {color: white;}
-
-.info-1 {padding: 250px 0;
-background-image: url(img/imagen/bg2.png);
-background-position: center center;
-background-repeat: no-repeat;
-background-size: 100% 100%;}
-
-.info-content {text-align: center;}
-
-.info-content h2, span {color: white;}
-
-.info-circle {display: flex;
-justify-content: space-between;
-margin-top: 55px;}
-
-.circle-txt {width: 25%;
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
-margin: 0 10px;}
-
-footer {
-            background-image: linear-gradient(to right,rgb(223,243,211),aquamarine) ;
-            color: black;
-            text-align: center;
-            padding: 3px 1px;
-            overflow: hidden;
-            clear: both;
-            border-radius: 10px;
-            
-            
+    <title>sinmiedot</title>
+    <style>
+        body {
+            background-color: red;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-style: italic;
         }
-
-        aside {
-     width: 30%;
-     float: left;
-     padding: 327px  20px;
-     background: url(img/imagen/TeoremaPitagoras.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px;
-    box-shadow: 5px 5px 5px gray;
-    margin-bottom: 20px;
- }
-
- .derecha {
-    width: 30%;
-  background: rgba(107, 111, 28, 0.912);
-    float: left;
-    padding: 300px  20px;
- background: url(img/imagen/TeoremaPitagoras.jpg);
-   background-size: cover;
-   background-position: center;
-   border-radius: 15px;
-   box-shadow: 5px 5px 5px gray;
-}
-
-</style>
+        table {
+            background-color: aqua;
+            width: 80%;
+            margin: auto;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
-    <header class="header">
-    <div class="menu container"> <a href="#" class="logo">logo</a>
-        <input type="checkbox" id="menu">
-        <label for="menu"><img src="C:\Users\CARMEN VARGAS\Desktop\jeje\reda2\img\imagen\menu.png" width="4%" alt=""></label>
-
-        <nav class="navbar">
-            <ul>
-            <li><a href="inicio.html">Inicio </a></li>
-            <li><a href="contenido.html">Contenido</a></li>
-            <li><a href="actividades.html">Actividades</a></li>
-            <li><a href="evaluacion.html">Evaluacion</a></li>
-            <li><a href="Materialcomplementario.html">Materialcomplementario</a></li>
-            <li><a href="Creditos.html">Creditos</a></li>
-
-        </ul>
-        </nav>
-    </div>
-    <div class="header-content container">
-        <div class="header-txt">
-            <h1>Presentación de reda2</h1>
-            <p> 
-            "El éxito no es la clave de la felicidad. La felicidad es la clave del éxito." - Albert Schweitzer
-            </p>
-            <a href="#" class="btn-1">Informacion</a>
-        </div>
-        
-    </div>
-
-    </header>
+    <center>
+        <table border="3">
+            <tr>
+                <th>Propiedad</th>
+                <th>Valor</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td><label for="nom">Digite sus Nombres:</label></td>
+                    <td><input type="text" name="nom" id="nom" placeholder="Escriba sus Nombre" autofocus></td>
+                </tr>
+                <tr>
+                    <td><label for="ape">Digite sus Apellidos:</label></td>
+                    <td><input type="text" name="ape" id="ape" placeholder="Escriba Aquí sus Apellidos"></td>
+                </tr>
+                <tr>
+                    <td>Seleccione Género:</td>
+                    <td>
+                        <span>Masculino</span> <input type="radio" name="sexo" id="Masculino" value="Masculino" checked>
+                        <br>
+                        <span>Femenino</span> <input type="radio" name="sexo" id="Femenino" value="Femenino">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fecha de registro:</td>
+                    <td><input type="date" name="fecha" id="fecha"></td>
+                </tr>
+                <tr>
+                    <td>Digite año de nacimiento:</td>
+                    <td><input type="number" id="añoNac"></td>
+                </tr>
+                <tr>
+                    <td>Digite nota final:</td>
+                    <td><input type="number" name="nf" id="nf" step="0.01" max="5.0" min="0.0"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="enviar" onclick="mostrarInput()">Enviar</button>
+        <br><br>
+        <h1>Listado de Datos Digitados</h1>
+        <hr noshade="noshade" size="3" width="50%" color="green">
+        <table border="3">
+            <tr>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Género</th>
+                <th>Fecha Registro</th>
+                <th>Año Nacimiento</th>
+                <th>Edad</th>
+                <th>Mayor/Menor</th>
+                <th>Nota Final</th>
+                <th>Aprobado/Reprobado</th>
+                <th>Calificación Cualitativa</th>
+            </tr>
+            <tbody id="cuerpo">
+            </tbody>
+        </table>
+    </center>
     
-    <section class="general container">
-        <h2>Preparativos</h2>
-        <div class="general-content">
-            <div class="general-1 txt">
-                <h3>preparativos 1</h3>
-                <p>Antes de abordar el teorema en sí, es esencial comprender la naturaleza de un triángulo rectángulo y las propiedades inherentes que lo definen. Un triángulo rectángulo, como su nombre sugiere, contiene un ángulo recto, es decir, un ángulo de 90 grados. Este detalle es crucial, ya que proporciona la base para la aplicación del teorema.</p>
-            </div>
-            <div class="general-2 txt">
-                <h3>preparativos 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non alias fuga vel quo, quod tempora quas vero? 
-                    Similique accusantium consequuntur totam deserunt. </p>
-            </div>
-            <div class="general-3 txt">
-                <h3>preparativos 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non alias fuga vel quo, quod tempora quas vero? 
-                    Similique accusantium consequuntur totam deserunt. </p>
-            </div>
-        </div>
-    </section>
-<aside></aside>
-<aside class="derecha"></aside>
-    <section class="info-1">
-        <div class=" info-content container">
-            <h2>informacion</h2>
-            <div class="info-circle">
+    <script>
+        var salida= '';
+        function mostrarInput() {
+            var nombre = document.getElementById("nom").value;
+            var apellido = document.getElementById("ape").value;
+            var sexo = document.querySelector('input[name="sexo"]:checked').value;
+            var fechaReg = document.getElementById("fecha").value;
+            var añoNac = document.getElementById("añoNac").value;
+            var nf = document.getElementById("nf").value;
 
-                <div class="circle-txt">
+            salida += '<tr><td>' + nombre + '</td><td>' + apellido + '</td><td>' +
+                sexo + '</td><td>' + fechaReg + "</td><td>" + añoNac + "</td><td>" + edad(añoNac) +
+                "</td><td>" + evaluarEdad(añoNac) + "</td><td>" + notaColor(nf) +
+                "</td><td>" + evaluarNotaFinal(nf) + "</td><td>" + calificacionCualitativa(nf) +
+                "</td></tr>";
+            document.getElementById("cuerpo").innerHTML = salida;
+            LimpiarCajas();
+        }
 
-                    <div class="circle-1">
-                        <h2>0000000</h2>
-                    </div>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non alias fuga vel quo, quod tempora quas vero? </p>
-                </div>
-                
-                <div class="circle-txt">
+        function LimpiarCajas() {
+            document.getElementById("nom").value = "";
+            document.getElementById("ape").value = "";
+            document.getElementById("Masculino").checked = true;
+            document.getElementById("fecha").value = "";
+            document.getElementById("añoNac").value = "";
+            document.getElementById("nf").value = "";
+            document.getElementById("nom").focus();
+        }
 
-                    <div class="circle-1">
-                        <h2>00001</h2>
-                    </div>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non alias fuga vel quo, quod tempora quas vero? </p>
-                </div>
-                <div class="circle-txt">
+        function edad(añoNac) {
+            return (new Date().getFullYear() - añoNac);
+        }
 
-                    <div class="circle-1">
-                        <h2>00004</h2>
-                    </div>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non alias fuga vel quo, quod tempora quas vero? </p>
-                </div>
-                <div class="circle-txt">
+        function evaluarEdad(añoNac) {
+            var edadCalc = edad(añoNac);
+            return edadCalc >= 18 ? "Mayor de edad" : "Menor de edad";
+        }
 
-                    <div class="circle-1">
-                        <h2>0555</h2>
-                    </div>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non alias fuga vel quo, quod tempora quas vero? </p>
-                </div>
-            </div>
+        function notaColor(nf) {
+            if (nf >= 3.0) {
+                return '<span style="color: blue;">' + nf + '</span>';
+            } else {
+                return '<span style="color: red;">' + nf + '</span>';
+            }
+        }
 
-        </div>
-    </section>
+        function evaluarNotaFinal(nf) {
+            if (nf >= 3.0) {
+                return '<span style="color: blue;">Aprobado</span>';
+            } else {
+                return '<span style="color: red;">Reprobado</span>';
+            }
+        }
 
-    <section class="general g2 container">
-        <h2>Nuestro equipo</h2>
-        <div class="general-content">
-            <div class="general-4 txt">
-                <h3>preparativos 4</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non alias fuga vel quo, quod tempora quas vero? 
-                    Similique accusantium consequuntur totam deserunt. Perferendis labore aliquid rem, a odio laudantium ad?</p>
-            </div>
-            <div class="general-5 txt">
-                <h3>preparativos 5</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non alias fuga vel quo, quod tempora quas vero? 
-                    Similique accusantium consequuntur totam deserunt. Perferendis labore aliquid rem, a odio laudantium ad?</p>
-            </div>
-            <div class="general-6 txt">
-                <h3>preparativos 6</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non alias fuga vel quo, quod tempora quas vero? 
-                    Similique accusantium consequuntur totam deserunt. Perferendis labore aliquid rem, a odio laudantium ad?</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="info-2">
-        <div class="info-content container">
-            <h2>testimonio</h2>
-<div class="testi">
-
-    <div class="testi left">
-<div class="testi-txt">
-    <img src="##" alt="">
-    <h3>Inicio del teorema de Pitágoras</h3>
-    <p>Pitágoras fué profesor y filósofo. Pitágoras descubrió que para un triángulo rectángulo (con uno de los ángulos igual a 90°), el cuadrado de la hipotenusa es igual a la suma de los cuadrados de los otros dos lados: a2+b2=c2. En otras palabras, el área cuadrada verde (con area c2) es igual a la suma de las dos otras.</p>
-
-</div>
-
-<div class="testi-txt">
-    <img src="##" alt="">
-    <h3>¿Qué aprendemos con el teorema de Pitágoras?</h3>
-    <p>El teorema de Pitágoras dice que, en un triángulo rectángulo, el área del cuadrado construido sobre la hipotenusa es igual a la suma de las áreas de los cuadrados construidos sobre los catetos.</p>
+        function calificacionCualitativa(nf) {
+                if (nf >= 0.0 && nf < 2.0) {
+                    return '<span style="color: red;">Deficiente</span>';
+                    return "Deficiente";
+                }
+                else{
+                    if ((nf >= 2.0) && (nf < 3.0)) {
+                        return '<span style="color: yellow;">suficiente</span>';
+                        return "Insuficiente";
+                    }
+                    else{
+                        if ((nf >= 3.0) && (nf < 3.5)) {
+                            return '<span style="color: grey;">Aceptable</span>';
+                            return "Aceptable";
+                        }
+                        else{
+                            if ((nf >= 3.5) && (nf < 4.0)) {
+                                return '<span style="color: orange;">Bueno</span>';
+                                return "Bueno";
+                            }
+                            else{
+                                if ((nf >= 4.0) && (nf < 4.5)) {
+                                    return '<span style="color:blue;">Sobresaliente</span>';
+                                    return "Sobresaliente";
+                                }
+                                else{
+                                    if ((nf >= 4.5) && (nf <= 5.0)) {
+                                        return '<span style="color: green;">Excelente</span>';
+                                        return "Excelente";
+                                    }
+                                    else{
+                                        return "Nota fuera de rango";
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
     
-</div>
-
-    </div>
-    <div class="testi-right">
-<img src="##" alt="">
-<h3>¿Qué importancia tuvo Pitágoras en las matemáticas?</h3>
-<p>Matemática. Formuló el teorema que lleva su nombre, según el cual “la suma del cuadrado de los catetos es igual al cuadrado de la hipotenusa” y también se lee atribuye la construcción geométrica de los primeros sólidos perfectos, el descubrimiento de los números perfectos y números amigos, así como números poligonales.</p>
-
-
-    </div>
-
-</div>
-        </div>
-    </section>
-
-<footer class="footer container">
-
-    <h2>Contacto</h2>
-<h3>Buenos dias</h3>
-<form>
-    <input class="campo" type="text" placeholder="nombre">
-    <input class="campo" type="email" placeholder="email">
-    <input type="submit" class="btn-2" value="Enviar">
-</form>
-
-<div class="footer-txt">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-
-</div>
-</footer>
-
-    <br>
-
+    </script>
 </body>
 </html>
