@@ -1,55 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<meta charset="utf-8" />
-<title>HTML &amp; CSS: Curso práctico avanzado</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sinmiedot</title>
+    <style>
+        body {
+            background-color: red;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-style: italic;
+        }
+        table {
+            background-color: aqua;
+            width: 80%;
+            margin: auto;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
 </head>
-<body style="color: #00F; background-color: #CFC; font-family: Georgia, Cambria, serif; font-size: 16px;">
-<h1 style="color: #F00; font-family: Verdana, Calibri, sans-serif; font-size: 32px;">HTML &amp; CSS: Curso práctico avanzado</h1>
-<h2 style="color: #A00; font-family: Verdana, Calibri, sans-serif; font-size: 24px;">Datos del libro</h2>
-<ul>
-<li style="color: #060;">Título: HTML &amp; CSS: Curso práctico avanzado</li>
-<li style="color: #060;">Autor: Sergio Luján Mora</li>
-<li style="color: #060;">Editorial: Publicaciones Altaria</li>
-<li style="color: #060;">Año de publicación: 2015</li>
-<li style="color: #060;">ISBN: 978-84-944049-4-8</li>
-</ul>
-<h2 style="color: #A00; font-family: Verdana, Calibri, sans-serif; font-size: 24px;">Descripción del libro</h2>
-<p>
-Aunque los inicios de <span style="font-size: 20px; font-weight: bold;">Internet</span> se remontan a los años sesenta, no ha sido hasta los años noventa
-cuando, gracias a la <span style="font-size: 20px; font-weight: bold;">Web</span>, se ha extendido su uso por todo el mundo. En pocos años, la <span style="font-size: 20px; font-weight: bold;">Web</span> ha
-evolucionado enormemente: se ha pasado de páginas sencillas, con pocas imágenes y contenidos
-estáticos que eran visitadas por unos pocos usuarios a páginas complejas, con contenidos dinámicos que
-provienen de bases de datos y que son visitadas por miles de usuarios al mismo tiempo.
-</p>
-<p>
-Todas las páginas están internamente construidas con la misma tecnología, con el <span style="color: #FFF; background-color: #000; font-style: italic;">Lenguaje de marcas de
-hipertexto (Hypertext Markup Language, <strong>HTML</strong>)</span> y con las <span style="color: #FFF; background-color: #000; font-style: italic;">Hojas de estilo en cascada (Cascading Style
-Sheets, <strong>CSS</strong>)</span>.
-</p>
-<p>
-Este libro es adecuado para cualquiera que tenga interés en aprender a desarrollar sus propias páginas
-web. No son necesarios conocimientos previos para aprender con este libro, lo único que es necesario es
-saber utilizar un ordenador y saber navegar por la <span style="font-size: 20px; font-weight: bold;">Web</span>.
-</p>
-<h2 style="color: #A00; font-family: Verdana, Calibri, sans-serif; font-size: 24px;">Contenido del libro</h2>
-<p>
-El contenido de este libro se estructura en tres apartados bien diferenciados:
-</p>
-<ul>
-<li>En la primera parte del libro se trabajan conceptos generales que son necesarios para poder
-desarrollar páginas web; se explican conceptos de estructura física y estructura lógica (o estructura de
-navegación) de un sitio web. Se detalla cómo influye la estructura física en las URL o direcciones que se
-emplean a la hora de crear los enlaces de un sitio web. Pasando por el concepto de "<span style="color: #FFF; background-color: #000; font-style: italic;">estándar web</span>", un
-término general que se emplea para referirse a los estándares que define su funcionamiento como
-<span style="color: #FFF; background-color: #000; font-style: italic;">HTML</span> y <span style="color: #FFF; background-color: #000; font-style: italic;">CSS</span>, empleados para el desarrollo de las páginas web en el lado del cliente.</li>
-<li>En la segunda parte se trabaja <span style="color: #FFF; background-color: #000; font-style: italic;">HTML</span>. Partiendo de la estructura básica de una página web, se
-explican las etiquetas de <span style="color: #FFF; background-color: #000; font-style: italic;">HTML</span> que se utilizan para definir el texto, los enlaces, las listas, las tablas, los
-formularios y los elementos multimedia.</li>
-<li>En la tercera y última parte se explica <span style="color: #FFF; background-color: #000; font-style: italic;">CSS</span>, el lenguaje que se emplea para definir el formato y la
-presentación de una página web. Se explica cómo utilizar el color, cómo definir la presentación del texto,
-de las tablas y de los formularios; cómo realizar transformaciones y transiciones con el fin de diseñar una
-página web.</li>
-</ul>
+<body>
+    <center>
+        <table border="3">
+            <tr>
+                <th>Propiedad</th>
+                <th>Valor</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td><label for="nom">Digite sus Nombres:</label></td>
+                    <td><input type="text" name="nom" id="nom" placeholder="Escriba sus Nombre" autofocus></td>
+                </tr>
+                <tr>
+                    <td><label for="ape">Digite sus Apellidos:</label></td>
+                    <td><input type="text" name="ape" id="ape" placeholder="Escriba Aquí sus Apellidos"></td>
+                </tr>
+                <tr>
+                    <td>Seleccione Género:</td>
+                    <td>
+                        <span>Masculino</span> <input type="radio" name="sexo" id="Masculino" value="Masculino" checked>
+                        <br>
+                        <span>Femenino</span> <input type="radio" name="sexo" id="Femenino" value="Femenino">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fecha de registro:</td>
+                    <td><input type="date" name="fecha" id="fecha"></td>
+                </tr>
+                <tr>
+                    <td>Digite año de nacimiento:</td>
+                    <td><input type="number" id="añoNac"></td>
+                </tr>
+                <tr>
+                    <td>Digite nota final:</td>
+                    <td><input type="number" name="nf" id="nf" step="0.01" max="5.0" min="0.0"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="enviar" onclick="mostrarInput()">Enviar</button>
+        <br><br>
+        <h1>Listado de Datos Digitados</h1>
+        <hr noshade="noshade" size="3" width="50%" color="green">
+        <table border="3">
+            <tr>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Género</th>
+                <th>Fecha Registro</th>
+                <th>Año Nacimiento</th>
+                <th>Edad</th>
+                <th>Mayor/Menor</th>
+                <th>Nota Final</th>
+                <th>Aprobado/Reprobado</th>
+                <th>Calificación Cualitativa</th>
+            </tr>
+            <tbody id="cuerpo">
+            </tbody>
+        </table>
+    </center>
+    
+    <script>
+        var salida= '';
+        function mostrarInput() {
+            var nombre = document.getElementById("nom").value;
+            var apellido = document.getElementById("ape").value;
+            var sexo = document.querySelector('input[name="sexo"]:checked').value;
+            var fechaReg = document.getElementById("fecha").value;
+            var añoNac = document.getElementById("añoNac").value;
+            var nf = document.getElementById("nf").value;
+
+            salida += '<tr><td>' + nombre + '</td><td>' + apellido + '</td><td>' +
+                sexo + '</td><td>' + fechaReg + "</td><td>" + añoNac + "</td><td>" + edad(añoNac) +
+                "</td><td>" + evaluarEdad(añoNac) + "</td><td>" + notaColor(nf) +
+                "</td><td>" + evaluarNotaFinal(nf) + "</td><td>" + calificacionCualitativa(nf) +
+                "</td></tr>";
+            document.getElementById("cuerpo").innerHTML = salida;
+            LimpiarCajas();
+        }
+
+        function LimpiarCajas() {
+            document.getElementById("nom").value = "";
+            document.getElementById("ape").value = "";
+            document.getElementById("Masculino").checked = true;
+            document.getElementById("fecha").value = "";
+            document.getElementById("añoNac").value = "";
+            document.getElementById("nf").value = "";
+            document.getElementById("nom").focus();
+        }
+
+        function edad(añoNac) {
+            return (new Date().getFullYear() - añoNac);
+        }
+
+        function evaluarEdad(añoNac) {
+            var edadCalc = edad(añoNac);
+            return edadCalc >= 18 ? "Mayor de edad" : "Menor de edad";
+        }
+
+        function notaColor(nf) {
+            if (nf >= 3.0) {
+                return '<span style="color: blue;">' + nf + '</span>';
+            } else {
+                return '<span style="color: red;">' + nf + '</span>';
+            }
+        }
+
+        function evaluarNotaFinal(nf) {
+            if (nf >= 3.0) {
+                return '<span style="color: blue;">Aprobado</span>';
+            } else {
+                return '<span style="color: red;">Reprobado</span>';
+            }
+        }
+
+        function calificacionCualitativa(nf) {
+                if (nf >= 0.0 && nf < 2.0) {
+                    return '<span style="color: red;">Deficiente</span>';
+                    return "Deficiente";
+                }
+                else{
+                    if ((nf >= 2.0) && (nf < 3.0)) {
+                        return '<span style="color: yellow;">suficiente</span>';
+                        return "Insuficiente";
+                    }
+                    else{
+                        if ((nf >= 3.0) && (nf < 3.5)) {
+                            return '<span style="color: grey;">Aceptable</span>';
+                            return "Aceptable";
+                        }
+                        else{
+                            if ((nf >= 3.5) && (nf < 4.0)) {
+                                return '<span style="color: orange;">Bueno</span>';
+                                return "Bueno";
+                            }
+                            else{
+                                if ((nf >= 4.0) && (nf < 4.5)) {
+                                    return '<span style="color:blue;">Sobresaliente</span>';
+                                    return "Sobresaliente";
+                                }
+                                else{
+                                    if ((nf >= 4.5) && (nf <= 5.0)) {
+                                        return '<span style="color: green;">Excelente</span>';
+                                        return "Excelente";
+                                    }
+                                    else{
+                                        return "Nota fuera de rango";
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+    </script>
 </body>
 </html>

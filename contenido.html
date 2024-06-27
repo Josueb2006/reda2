@@ -5,20 +5,180 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/jpg" href="C:\Users\CARMEN VARGAS\Desktop\jeje\reda2\img/hogar.png">
     <title>Pagina de contenido</title>
-    <nav>
-        <a href="inicio.html"><img src="C:\Users\CARMEN VARGAS\Desktop\jeje\reda2\img/hogar.png" alt=""></a>|
-        <a href="contenido.html">contenido <img src="C:\Users\Informatica04\Desktop\fundamento de algoritmia 2024\REDA_prueba\img/contenido.png" width="2%" alt=""></a>|
-        <a href="actividades.html">Actividades</a>|
-        <a href="evaluacion.html">Evaluacion</a>|
-        <a href="Materialcomplementario.html">Materialcomplementario</a>|
-        <a href="Creditos.html">Creditos</a>|
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;}
+
+body{font-family: "popping", sans-serif;}
+
+.container{max-width: 1200px;
+margin: 0 auto;}
+
+.header{background-image: url(img/imagen/pt.webp);
+background-position: center bottom;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 70vh;
+align-items: center;
+display: flex;
+align-items: center;}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo{color: white;
+font-size: 25px;
+font-weight: 800;}
+
+.menu .navbar ul li {position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    display: block;
+}
+.menu .navbar ul li a:hover{font-size: 18px;
+padding: 10px;
+color: black;
+display: block;
+background-color: white;}
+#menu{display: none;}
+.menu-icono {width: 25px;}
+
+.menu label {cursor: pointer;
+display: none;}
+.header-txt {text-align: center;}
+
+.header-txt h1 { font-size: 85px;
+color: white;
+text-transform: uppercase;
+margin-bottom: 20px;}
+
+.header-txt p {color: white;
+font-size: 16px;
+padding: 0 250px;
+margin-bottom: 45px;}
+.btn-1 {display: inline-block;
+padding: 12px 45px;
+border: 1px solid white;
+color: white;
+font-size: 16px;
+text-transform: uppercase;
+font-weight: 600;}
+.btn-1:hover {color: black;
+background-color: white;}
+h2 {font-size: 70px;
+text-transform: uppercase;
+color: #1B293A;}
+
+.txt h3 { font-size: 18px;
+color: white;
+text-transform: uppercase;
+margin-bottom: 10px;}
+
+.txt p {color: white;}
+
+aside {
+    width: 30%;
+    float: left;
+    padding: 327px  20px;
+    background: url(img/imagen/TeoremaPitagoras.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px gray;
+    margin-bottom: 20px;
+}
+
+.derecha {
+    width: 30%;
+background: rgba(107, 111, 28, 0.912);
+    float: left;
+    padding: 300px  20px;
+background: url(img/imagen/TeoremaPitagoras.jpg);
+background-size: cover;
+background-position: center;
+border-radius: 15px;
+box-shadow: 5px 5px 5px gray;
+}
+.section{text-align: justify;}
+.main .articles {
+     width: 68.5%;
+     margin-right:1.5%;
+     float: left;
+     
+    
+ }
+.main .articles article {
+padding: 20px;
+background: #ffffff;
+margin-bottom: 20px;
+border-radius: 15px;
+background-image: linear-gradient(to right, rgb(223, 243, 111),white);
+box-shadow: 5px 5px 5px gray;
+font-size: 18px;
+
+}
+
+
+    </style>
+    </head>
+    <body>
+    <header class="header">
+        <div class="menu container"> <a href="#" class="logo">logo</a>
+            <input type="checkbox" id="menu">
+            <label for="menu"><img src="C:\Users\CARMEN VARGAS\Desktop\jeje\reda2\img\imagen\menu.png" width="4%" alt=""></label>
+    <nav class="navbar">
+        <ul>
+        <li><a href="inicio.html">Inicio </a></li>
+        <li><a href="contenido.html">Contenido</a></li>
+        <li><a href="actividades.html">Actividades</a></li>
+        <li><a href="evaluacion.html">Evaluacion</a></li>
+        <li><a href="Materialcomplementario.html">Materialcomplementario</a></li>
+        <li><a href="Creditos.html">Creditos</a></li>
+
+    </ul>
     </nav>
-</head>
-<body>
-    <br>
+</div>
+<div class="header-content container">
+    <div class="header-txt">
+        <h1>Contenido</h1>
+        <p> 
+            "El éxito es la suma de pequeños esfuerzos repetidos día tras día." - Robert Collier
+        </p>
+        <a href="#" class="btn-1">Informacion</a>
+    </div>
+    
+</div>
+    </header>
+    
     <center>
-    <h1>Esta es mi pagina de contenido</h1>
+        <br>
+    <br>
+    <section class="main">
+    <section class="articles">
+        <article>
+
+    <center><h1>Esta es mi pagina de contenido</h1></center>
+    <br>
     <hr noshade="noshade" size="5" width="50%" color="blue">
+    <br>
+    <p> Les vamos a presentar nuestro tema a tratar para esta tematica y enseñanza de esta no se preocupen le haremos entender de la manera mas sencilla posible.</p>
+    <br>
     <p>Teorema de Pitágoras
     
         El Teorema de Pitágoras es uno de los teoremas que más
@@ -30,16 +190,11 @@
         la historia.
         
         </p>
-
+    </article>
+<article>
         <p>Teorema de Pitágoras
-
-            El Teorema de Pitágoras es uno de los teoremas que más
-            ha maravillado a todas las civilizaciones a lo largo de la historia. Algunos historiadores sugieren que en Babilonia por
-            el año 1600 a.C., se calculaban las diagonales de ciertas figuras utilizando este teorema, sin embargo, la primera demostración formal conocida se le otorga usualmente al filósofo matemático griego Pitágoras de Samos, considerado
-            el primer matemático puro. Este teorema cuenta con una
-            gran cantidad de demostraciones realizadas por personajes
-            importantes de la ciencia y la matemática a lo largo de toda
-            la historia.
+<br>
+            
             
             En la antigüedad se utilizaba el teorema de
             Pitágoras para medir terrenos en agricultura,
@@ -65,7 +220,7 @@
             = 25 (cm)2
             3 × 4
             2
-        
+        <br>
             Cálculo de la hipotenusa de un triángulo rectángulo, parte 1
 En la figura, el ∆ABC, ∆DAF, ∆EDG y ∆BEH son triángulos
 rectángulos y congruentes.
@@ -73,57 +228,13 @@ a) Encuentra el área del cuadrado CFGH.
 b) Encuentra el área del cuadrilátero ADEB.
 c) Demuestra que el cuadrilátero ADEB es un cuadrado
 verificando ∢BAD = 90°.
-d) Encuentra la medida del lado AB.
+d) Encuentra la medida del lado AB.</p>
+</article>
+</section>
+            <aside></aside>
+    <aside class="derecha"></aside>
+    
 
-            
-            </p>
-
-    <!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Practica Teorema de Pitágoras</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-    }
-    #resultado {
-        font-weight: bold;
-        color: blue;
-    }
-</style>
-</head>
-<body>
-<h1>Actividad Teorema de Pitágoras</h1>
-<p>Ingresa las longitudes de los dos catetos del triángulo rectángulo:</p>
-<label for="catetoA">Cateto A:</label>
-<input type="number" id="catetoA"><br><br>
-<label for="catetoB">Cateto B:</label>
-<input type="number" id="catetoB"><br><br>
-<button onclick="calcularHipotenusa()">Calcular Hipotenusa</button>
-<p id="resultado"></p>
-
-<script>
-function calcularHipotenusa() {
-    var catetoA = parseFloat(document.getElementById('catetoA').value);
-    var catetoB = parseFloat(document.getElementById('catetoB').value);
-
-    if (isNaN(catetoA) || isNaN(catetoB)) {
-        alert('Por favor ingresa números válidos para los catetos.');
-        return;
-    }
-
-    var hipotenusa = Math.sqrt(Math.pow(catetoA, 2) + Math.pow(catetoB, 2));
-    document.getElementById('resultado').innerText = 'La longitud de la hipotenusa es: ' + hipotenusa.toFixed(2);
-}
-</script>
-</body>
-</html>
-</center>
-
-
-
+</section>
 </body>
 </html>
