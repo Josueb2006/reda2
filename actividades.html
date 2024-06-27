@@ -24,6 +24,10 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
         }
         
         .header {
@@ -39,6 +43,7 @@
             color: white;
             padding: 20px;
             border-bottom: 5px solid #333;
+            width: 100%;
         }
         
         .header h1 {
@@ -63,6 +68,7 @@
             z-index: 1000;
             padding: 10px 20px;
             background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
         }
         
         .logo {
@@ -92,11 +98,12 @@
         }
         
         .main {
-            background-color: #ffffff;
+            background-color: aqua;
             padding: 20px;
             margin-top: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 70%;
         }
         
         .main h1 {
@@ -113,6 +120,7 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
         }
         
         .actividad h2 {
@@ -134,6 +142,7 @@
             margin-top: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 25%;
         }
         
         .preguntas h3 {
@@ -145,6 +154,27 @@
         
         .preguntas ul {
             padding-left: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .cuadro {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .cuadro h4 {
+            font-size: 1.1em;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        
+        .cuadro p {
+            font-size: 0.9em;
+            line-height: 1.5em;
+            color: #666;
         }
     </style>
 </head>
@@ -172,47 +202,88 @@
         </div>
     </header>
 
-    <div class="main container">
-        <h1>Actividades</h1>
+    <div class="container">
+        <main class="main">
+            <h1>Actividades</h1>
 
-        <div class="actividad">
-            <h2>Actividad 1:</h2>
-            <p>Calcula la longitud de la hipotenusa de un triángulo rectángulo con catetos de 3 y 4 unidades.</p>
-        </div>
+            <div class="actividad">
+                <h2>Actividad 1:</h2>
+                <p>Calcula la longitud de la hipotenusa de un triángulo rectángulo con catetos de 3 y 4 unidades.</p>
+            </div>
 
-        <div class="actividad">
-            <h2>Actividad 2:</h2>
-            <p>Dado un triángulo rectángulo con hipotenusa de 5 unidades y uno de los catetos de 3 unidades, encuentra la longitud del otro cateto.</p>
-        </div>
+            <div class="actividad">
+                <h2>Actividad 2:</h2>
+                <p>Dado un triángulo rectángulo con hipotenusa de 5 unidades y uno de los catetos de 3 unidades, encuentra la longitud del otro cateto.</p>
+            </div>
 
-        <div class="actividad">
-            <h2>Actividad 3:</h2>
-            <p>Para un triángulo rectángulo con catetos de 6 y 8 unidades, determina la longitud de la hipotenusa.</p>
-        </div>
+            <div class="actividad">
+                <h2>Actividad 3:</h2>
+                <p>Para un triángulo rectángulo con catetos de 6 y 8 unidades, determina la longitud de la hipotenusa.</p>
+            </div>
 
-        <div class="actividad">
-            <h2>Actividad 4:</h2>
-            <p>Calcula la longitud de la hipotenusa de un triángulo rectángulo con catetos de longitud 3 y 4 unidades.</p>
-        </div>
+            <div class="actividad">
+                <h2>Actividad 4:</h2>
+                <p>Calcula la longitud de la hipotenusa de un triángulo rectángulo con catetos de longitud 3 y 4 unidades.</p>
+            </div>
 
-        <div class="actividad">
-            <h2>Actividad 5:</h2>
-            <p>Encuentra la longitud de uno de los catetos de un triángulo rectángulo que tiene una hipotenusa de 10 unidades y otro cateto de 6 unidades.</p>
-        </div>
+            <div class="actividad">
+                <h2>Actividad 5:</h2>
+                <p>Encuentra la longitud de uno de los catetos de un triángulo rectángulo que tiene una hipotenusa de 10 unidades y otro cateto de 6 unidades.</p>
+            </div>
 
-        <div class="actividad">
-            <h2>Actividad 6:</h2>
-            <p>Verifica si un triángulo con lados de longitud 5, 12 y 13 unidades es un triángulo rectángulo.</p>
-        </div>
+            <div class="actividad">
+                <h2>Actividad 6:</h2>
+                <p>Verifica si un triángulo con lados de longitud 5, 12 y 13 unidades es un triángulo rectángulo.</p>
+            </div>
 
-        <div class="preguntas">
+            <!-- Nuevas actividades -->
+            <div class="actividad">
+                <h2>Actividad 7:</h2>
+                <p>Calcula la longitud de la hipotenusa de un triángulo rectángulo con catetos de 7 y 8 unidades.</p>
+            </div>
+
+            <div class="actividad">
+                <h2>Actividad 8:</h2>
+                <p>Dado un triángulo rectángulo con hipotenusa de 13 unidades y uno de los catetos de 5 unidades, encuentra la longitud del otro cateto.</p>
+            </div>
+
+            <div class="actividad">
+                <h2>Actividad 9:</h2>
+                <p>Para un triángulo rectángulo con catetos de 9 y 12 unidades, determina la longitud de la hipotenusa.</p>
+            </div>
+        </main>
+
+        <aside class="preguntas">
             <h3>Preguntas sobre el Teorema de Pitágoras:</h3>
-            <ul>
-                <li>¿Cuál es la fórmula del teorema de Pitágoras?</li>
-                <li>¿En qué situaciones se aplica el teorema de Pitágoras?</li>
-                <li>¿Qué papel jugó Pitágoras en el desarrollo del teorema?</li>
-            </ul>
-        </div>
+            <div class="cuadro">
+                <h4>¿Cuál es la fórmula del teorema de Pitágoras?</h4>
+                <p>La fórmula del teorema de Pitágoras es a² + b² = c², donde "c" representa la hipotenusa y "a" y "b" los catetos de un triángulo rectángulo.</p>
+            </div>
+            <div class="cuadro">
+                <h4>¿En qué situaciones se aplica el teorema de Pitágoras?</h4>
+                <p>El teorema de Pitágoras se aplica en situaciones donde necesitamos calcular la longitud de uno de los lados de un triángulo rectángulo si conocemos los otros dos lados.</p>
+            </div>
+            <div class="cuadro">
+                <h4>¿Qué papel jugó Pitágoras en el desarrollo del teorema?</h4>
+                <p>Pitágoras fue un matemático y filósofo griego que, junto con sus seguidores, contribuyó al desarrollo y la popularización del teorema de Pitágoras en la antigua Grecia.</p>
+            </div>
+            <div class="cuadro">
+                <h4>¿Cómo se puede demostrar el teorema de Pitágoras?</h4>
+                <p>Existen varias demostraciones del teorema de Pitágoras, incluyendo demostraciones geométricas y algebraicas. Una de las más conocidas es la demostración mediante el área de figuras geométricas.</p>
+            </div>
+            <div class="cuadro">
+                <h4>¿Cuál es la relación entre los lados de un triángulo rectángulo según el teorema de Pitágoras?</h4>
+                <p>Según el teorema de Pitágoras, en un triángulo rectángulo, el cuadrado de la longitud de la hipotenusa (el lado más largo) es igual a la suma de los cuadrados de las longitudes de los otros dos lados (los catetos).</p>
+            </div>
+            <div class="cuadro">
+                <h4>¿Qué es un triángulo rectángulo?</h4>
+                <p>Un triángulo rectángulo es un tipo de triángulo que tiene un ángulo recto (90 grados). Los lados que forman el ángulo recto se denominan catetos, y el lado opuesto al ángulo recto se llama hipotenusa.</p>
+            </div>
+            <div class="cuadro">
+                <h4>¿Cuáles son las propiedades de los triángulos rectángulos?</h4>
+                <p>Los triángulos rectángulos tienen varias propiedades importantes, como el cumplimiento del teorema de Pitágoras, la relación trigonométrica seno, coseno y tangente, y la propiedad de que la suma de los ángulos interiores es siempre 180 grados.</p>
+            </div>
+        </aside>
     </div>
 
 </body>
