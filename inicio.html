@@ -3,179 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sinmiedot</title>
+    <link rel="icon" type="image/jpg" href="C:\Users\CARMEN VARGAS\Desktop\jeje\reda2\img/hogar.png">
+    <title>Pagina de contenido</title>
     <style>
-        body {
-            background-color: red;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
-            font-style: italic;
-        }
-        table {
-            background-color: aqua;
-            width: 80%;
-            margin: auto;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;}
+
+body{font-family: "popping", sans-serif;}
+
+.container{max-width: 1200px;
+margin: 0 auto;}
+
+.header{background-image: url(img/imagen/pt.webp);
+background-position: center bottom;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 70vh;
+align-items: center;
+display: flex;
+align-items: center;}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo{color: white;
+font-size: 25px;
+font-weight: 800;}
+
+.menu .navbar ul li {position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    display: block;
+}
+.menu .navbar ul li a:hover{font-size: 18px;
+padding: 10px;
+color: black;
+display: block;
+background-color: white;}
+#menu{display: none;}
+.menu-icono {width: 25px;}
+
+.menu label {cursor: pointer;
+display: none;}
+.header-txt {text-align: center;}
+
+.header-txt h1 { font-size: 85px;
+color: white;
+text-transform: uppercase;
+margin-bottom: 20px;}
+
+.header-txt p {color: white;
+font-size: 16px;
+padding: 0 250px;
+margin-bottom: 45px;}
+.btn-1 {display: inline-block;
+padding: 12px 45px;
+border: 1px solid white;
+color: white;
+font-size: 16px;
+text-transform: uppercase;
+font-weight: 600;}
+.btn-1:hover {color: black;
+background-color: white;}
+h2 {font-size: 70px;
+text-transform: uppercase;
+color: #1B293A;}
+
+.txt h3 { font-size: 18px;
+color: white;
+text-transform: uppercase;
+margin-bottom: 10px;}
+
+.txt p {color: white;}
+
+aside {
+    width: 30%;
+    float: left;
+    padding: 327px  20px;
+    background: url(img/imagen/TeoremaPitagoras.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px gray;
+    margin-bottom: 20px;
+}
+
+.derecha {
+    width: 30%;
+background: rgba(107, 111, 28, 0.912);
+    float: left;
+    padding: 300px  20px;
+background: url(img/imagen/TeoremaPitagoras.jpg);
+background-size: cover;
+background-position: center;
+border-radius: 15px;
+box-shadow: 5px 5px 5px gray;
+}
+.section{text-align: justify;}
+.main .articles {
+     width: 68.5%;
+     margin-right:1.5%;
+     float: left;
+     
+    
+ }
+.main .articles article {
+    float: right;
+    width: 90%;
+padding: 20px;
+background: #ffffff;
+margin-bottom: 20px;
+border-radius: 15px;
+background-image: linear-gradient(to right, rgb(223, 243, 111),white);
+box-shadow: 5px 5px 5px gray;
+font-size: 18px;
+
+}
+
+
     </style>
-</head>
-<body>
+    </head>
+    <body>
+    <header class="header">
+        <div class="menu container"> <a href="#" class="logo">logo</a>
+            <input type="checkbox" id="menu">
+            <label for="menu"><img src="C:\Users\CARMEN VARGAS\Desktop\jeje\reda2\img\imagen\menu.png" width="4%" alt=""></label>
+    <nav class="navbar">
+        <ul>
+        <li><a href="inicio.html">Inicio </a></li>
+        <li><a href="contenido.html">Contenido</a></li>
+        <li><a href="actividades.html">Actividades</a></li>
+        <li><a href="evaluacion.html">Evaluacion</a></li>
+        <li><a href="Materialcomplementario.html">Materialcomplementario</a></li>
+        <li><a href="Creditos.html">Creditos</a></li>
+
+    </ul>
+    </nav>
+</div>
+<div class="header-content container">
+    <div class="header-txt">
+        <h1>Inicio</h1>
+        <p> 
+            "Si no puedes volar, corre; si no puedes correr, camina; si no puedes caminar, gatea, pero sigue avanzando hacia tu meta". Martin Luther King.
+        </p>
+        <a href="#" class="btn-1">Información</a>
+    </div>
+    
+</div>
+    </header>
+    
     <center>
-        <table border="3">
-            <tr>
-                <th>Propiedad</th>
-                <th>Valor</th>
-            </tr>
-            <tbody>
-                <tr>
-                    <td><label for="nom">Digite sus Nombres:</label></td>
-                    <td><input type="text" name="nom" id="nom" placeholder="Escriba sus Nombre" autofocus></td>
-                </tr>
-                <tr>
-                    <td><label for="ape">Digite sus Apellidos:</label></td>
-                    <td><input type="text" name="ape" id="ape" placeholder="Escriba Aquí sus Apellidos"></td>
-                </tr>
-                <tr>
-                    <td>Seleccione Género:</td>
-                    <td>
-                        <span>Masculino</span> <input type="radio" name="sexo" id="Masculino" value="Masculino" checked>
-                        <br>
-                        <span>Femenino</span> <input type="radio" name="sexo" id="Femenino" value="Femenino">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Fecha de registro:</td>
-                    <td><input type="date" name="fecha" id="fecha"></td>
-                </tr>
-                <tr>
-                    <td>Digite año de nacimiento:</td>
-                    <td><input type="number" id="añoNac"></td>
-                </tr>
-                <tr>
-                    <td>Digite nota final:</td>
-                    <td><input type="number" name="nf" id="nf" step="0.01" max="5.0" min="0.0"></td>
-                </tr>
-            </tbody>
-        </table>
-        <button id="enviar" onclick="mostrarInput()">Enviar</button>
-        <br><br>
-        <h1>Listado de Datos Digitados</h1>
-        <hr noshade="noshade" size="3" width="50%" color="green">
-        <table border="3">
-            <tr>
-                <th>Nombres</th>
-                <th>Apellidos</th>
-                <th>Género</th>
-                <th>Fecha Registro</th>
-                <th>Año Nacimiento</th>
-                <th>Edad</th>
-                <th>Mayor/Menor</th>
-                <th>Nota Final</th>
-                <th>Aprobado/Reprobado</th>
-                <th>Calificación Cualitativa</th>
-            </tr>
-            <tbody id="cuerpo">
-            </tbody>
-        </table>
-    </center>
+        <br>
+    <br>
+    <section class="main">
+    <section class="articles">
+        <article>
+
     
-    <script>
-        var salida= '';
-        function mostrarInput() {
-            var nombre = document.getElementById("nom").value;
-            var apellido = document.getElementById("ape").value;
-            var sexo = document.querySelector('input[name="sexo"]:checked').value;
-            var fechaReg = document.getElementById("fecha").value;
-            var añoNac = document.getElementById("añoNac").value;
-            var nf = document.getElementById("nf").value;
-
-            salida += '<tr><td>' + nombre + '</td><td>' + apellido + '</td><td>' +
-                sexo + '</td><td>' + fechaReg + "</td><td>" + añoNac + "</td><td>" + edad(añoNac) +
-                "</td><td>" + evaluarEdad(añoNac) + "</td><td>" + notaColor(nf) +
-                "</td><td>" + evaluarNotaFinal(nf) + "</td><td>" + calificacionCualitativa(nf) +
-                "</td></tr>";
-            document.getElementById("cuerpo").innerHTML = salida;
-            LimpiarCajas();
-        }
-
-        function LimpiarCajas() {
-            document.getElementById("nom").value = "";
-            document.getElementById("ape").value = "";
-            document.getElementById("Masculino").checked = true;
-            document.getElementById("fecha").value = "";
-            document.getElementById("añoNac").value = "";
-            document.getElementById("nf").value = "";
-            document.getElementById("nom").focus();
-        }
-
-        function edad(añoNac) {
-            return (new Date().getFullYear() - añoNac);
-        }
-
-        function evaluarEdad(añoNac) {
-            var edadCalc = edad(añoNac);
-            return edadCalc >= 18 ? "Mayor de edad" : "Menor de edad";
-        }
-
-        function notaColor(nf) {
-            if (nf >= 3.0) {
-                return '<span style="color: blue;">' + nf + '</span>';
-            } else {
-                return '<span style="color: red;">' + nf + '</span>';
-            }
-        }
-
-        function evaluarNotaFinal(nf) {
-            if (nf >= 3.0) {
-                return '<span style="color: blue;">Aprobado</span>';
-            } else {
-                return '<span style="color: red;">Reprobado</span>';
-            }
-        }
-
-        function calificacionCualitativa(nf) {
-                if (nf >= 0.0 && nf < 2.0) {
-                    return '<span style="color: red;">Deficiente</span>';
-                    return "Deficiente";
-                }
-                else{
-                    if ((nf >= 2.0) && (nf < 3.0)) {
-                        return '<span style="color: yellow;">suficiente</span>';
-                        return "Insuficiente";
-                    }
-                    else{
-                        if ((nf >= 3.0) && (nf < 3.5)) {
-                            return '<span style="color: grey;">Aceptable</span>';
-                            return "Aceptable";
-                        }
-                        else{
-                            if ((nf >= 3.5) && (nf < 4.0)) {
-                                return '<span style="color: orange;">Bueno</span>';
-                                return "Bueno";
-                            }
-                            else{
-                                if ((nf >= 4.0) && (nf < 4.5)) {
-                                    return '<span style="color:blue;">Sobresaliente</span>';
-                                    return "Sobresaliente";
-                                }
-                                else{
-                                    if ((nf >= 4.5) && (nf <= 5.0)) {
-                                        return '<span style="color: green;">Excelente</span>';
-                                        return "Excelente";
-                                    }
-                                    else{
-                                        return "Nota fuera de rango";
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+    <br>
     
-    </script>
+    <br>
+    <p> Les vamos a presentar nuestro tema a tratar para esta tematica y enseñanza de esta no se preocupen le haremos entender de la manera mas sencilla posible.</p>
+    <br>
+    <p>Teorema de Pitágoras
+    
+        El Teorema de Pitágoras es uno de los teoremas que más
+        ha maravillado a todas las civilizaciones a lo largo de la historia. Algunos historiadores sugieren que en Babilonia por
+        el año 1600 a.C., se calculaban las diagonales de ciertas figuras utilizando este teorema, sin embargo, la primera demostración formal conocida se le otorga usualmente al filósofo matemático griego Pitágoras de Samos, considerado
+        el primer matemático puro. Este teorema cuenta con una
+        gran cantidad de demostraciones realizadas por personajes
+        importantes de la ciencia y la matemática a lo largo de toda
+        la historia.
+        
+        </p>
+    </article>
+<article>
+        <p>Teorema de Pitágoras
+<br>
+            
+            
+            En la antigüedad se utilizaba el teorema de
+            Pitágoras para medir terrenos en agricultura,
+            la altura de ciertos objetos, obtener el volumen de sólidos como pirámides y conos. En
+            la actualidad, el teorema sigue siendo indispensable en toda área donde es necesario el
+            cálculo de longitudes, como en ingeniería,
+            agricultura, física, astronomía y hasta en las
+            artes. En la matemática, el teorema permitió
+            el fortalecimiento de algunas áreas como la
+            geometría y el cálculo, además del descubrimiento de los números irracionales.
+            
+            En esta unidad estudiarás el teorema de Pitágoras, algunas de sus demostraciones, la resolución de problemas matemáticos por medio de este teorema y su aplicación a situaciones de la vida cotidiana.
+            
+            Formando cuadrados con 4 triángulos rectángulos congruentes y calculando el área se puede calcular la medida del la hipotenusa sabiendo los catetos.
+            En la siguiente figura, encuentra el valor de x:
+            a) CF = 4 + 3 = 7(cm), por lo tanto, el área es: 72 = 49(cm2
+            ).
+            b) El área del cuadrilátero ADEB se puede calcular restando al área del cuadrado FGHC, las áreas de los
+            cuatro triángulos que son congruentes.
+            (ADEB) = (FGHC) – (ABC) × 4
+            = (4 + 3)2 – × 4
+            = 49 – 24
+            = 25 (cm)2
+            3 × 4
+            2
+        <br>
+            Cálculo de la hipotenusa de un triángulo rectángulo, parte 1
+En la figura, el ∆ABC, ∆DAF, ∆EDG y ∆BEH son triángulos
+rectángulos y congruentes.
+a) Encuentra el área del cuadrado CFGH.
+b) Encuentra el área del cuadrilátero ADEB.
+c) Demuestra que el cuadrilátero ADEB es un cuadrado
+verificando ∢BAD = 90°.
+d) Encuentra la medida del lado AB.</p>
+</article>
+</section>
+            <aside></aside>
+    <aside class="derecha"></aside>
+    
+
+</section>
 </body>
 </html>
