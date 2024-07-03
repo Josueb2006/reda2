@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Ejemplo de Evaluación</title>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+</head>
+<body>
+ <section class="section container">
+ <h1 class="title">Ejemplo de Evaluación</h1>
+ <p class="subtitle">Una <strong>evaluación sencilla</strong> usando JavaScript</p>
+ <article class="panel">
+ <p class="panel-heading">¿Cúal es la Capital de Colombia?</p>
+ <a class="panel-block" onclick="seleccionar(this)">Armenia</a>
+ <a class="panel-block" onclick="seleccionar(this)">Santamarta</a>
+ <a id="correcta1" class="panel-block" onclick="seleccionar(this)">Bogotá</a>
+ <a class="panel-block" onclick="seleccionar(this)">Medellín</a>
+ <p id="mensaje1" class="panel-block"></p>
+ </article>
+ </section>
+ <script>
+ function seleccionar(opcion) {
+ let mensaje = document.getElementById("mensaje1")
+ if (opcion.id === "correcta1") {
+ mensaje.innerText = "Correcto, Bogotá es la capital de Colombia"
+ mensaje.classList.remove('has-text-danger')
+ mensaje.classList.add('has-text-primary')
+ } else {
+ mensaje.innerText = "Error!! " + opcion.innerText + " no es la capital de Colombia"
+ mensaje.classList.remove('has-text-primary')
+ mensaje.classList.add('has-text-danger')
+ }
+ }
+ </script>
+</body>
+</html>
