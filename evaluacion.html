@@ -462,6 +462,148 @@ footer {
      Publicado el 10 de agosto </time>
     
     </footer>
+    <br>
+    <title>Eluación de Pitágoras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #add8e6;
+            margin: 0;
+            padding: 20px;
+        }
+        .quiz-container {
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .question {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .answers {
+            list-style-type: none;
+            padding: 0;
+        }
+        .answers li {
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            font-size: 1.2em;
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Evaluación de Pitágoras</h1>
+        <div id="quiz">
+            <!-- Preguntas del quiz se insertarán aquí -->
+        </div>
+        <button id="submit">Enviar respuestas</button>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script>
+        const quizData = [
+            {
+                question: "¿Quién fue Pitágoras?",
+                a: "Un filósofo griego",
+                b: "Un matemático griego",
+                c: "Un científico romano",
+                d: "Un emperador romano",
+                correct: "b"
+            },
+            {
+                question: "¿Cuál es la fórmula del Teorema de Pitágoras?",
+                a: "a² + b² = c²",
+                b: "a² - b² = c²",
+                c: "a² + b = c²",
+                d: "a + b² = c²",
+                correct: "a"
+            },
+            {
+                question: "En un triángulo rectángulo, ¿qué es la hipotenusa?",
+                a: "El lado más corto",
+                b: "El lado perpendicular",
+                c: "El lado opuesto al ángulo recto",
+                d: "El ángulo recto",
+                correct: "c"
+            },
+            {
+                question: "¿Cómo se llama la escuela fundada por Pitágoras?",
+                a: "Academia",
+                b: "Liceo",
+                c: "Stoa",
+                d: "La Escuela Pitagórica",
+                correct: "d"
+            },
+            {
+                question: "¿Qué relación tienen los números con la música según Pitágoras?",
+                a: "No tienen ninguna relación",
+                b: "La música es un arte independiente",
+                c: "Los números y la música están interconectados",
+                d: "Los números sólo se aplican a las matemáticas",
+                correct: "c"
+            }
+        ];
+
+        const quizContainer = document.getElementById('quiz');
+        const submitButton = document.getElementById('submit');
+        const resultContainer = document.getElementById('result');
+
+        function loadQuiz() {
+            const quizContent = quizData.map((q, index) => `
+                <div class="question">${index + 1}. ${q.question}</div>
+                <ul class="answers">
+                    <li><input type="radio" name="q${index}" value="a"> ${q.a}</li>
+                    <li><input type="radio" name="q${index}" value="b"> ${q.b}</li>
+                    <li><input type="radio" name="q${index}" value="c"> ${q.c}</li>
+                    <li><input type="radio" name="q${index}" value="d"> ${q.d}</li>
+                </ul>
+            `).join('');
+            quizContainer.innerHTML = quizContent;
+        }
+
+        function getSelectedAnswers() {
+            return quizData.map((_, index) => {
+                const answer = document.querySelector(`input[name="q${index}"]:checked`);
+                return answer ? answer.value : null;
+            });
+        }
+
+        function showResults() {
+            const selectedAnswers = getSelectedAnswers();
+            let score = 0;
+
+            selectedAnswers.forEach((answer, index) => {
+                if (answer === quizData[index].correct) {
+                    score++;
+                }
+            });
+
+            resultContainer.style.display = 'block';
+            resultContainer.textContent = `Obtuviste ${score} de ${quizData.length} preguntas correctas.`;
+        }
+
+        submitButton.addEventListener('click', showResults);
+
+        loadQuiz();
+    </script>
     
 </body>
 </html>
